@@ -223,3 +223,13 @@ input[type="file"]::file-selector-button {
 button:hover {
   background-color: #457099;
 }
+
+
+/* For mobile view */
+
+@media only screen and (max-width: 600px) {
+  #signUpModal {
+      width: 100%;
+      padding: 10px;
+  }
+}
