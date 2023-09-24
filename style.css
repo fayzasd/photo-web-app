@@ -228,8 +228,8 @@ button:hover {
 /* For mobile view */
 
 @media only screen and (max-width: 600px) {
-  #signUpModal {
-      width: 100%;
+  .modal-content {
+      width: 90%;
       padding: 10px;
   }
 }
