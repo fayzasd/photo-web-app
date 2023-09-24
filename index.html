@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <form id="login-form">
+            <div id="input-container">
+                <input type="email" placeholder="Enter Email" id="email">
+                <input type="password" placeholder="Enter Password" id="password">
+            </div>
+            <br>
+            <button id="login-bttn" type="submit">Log In</button>
+        </form>
+        <button id="sign-up-entry">Sign Up</button>
+    </div>
+    <div id="sign-up-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Enter Details to Sign Up</p>
+          <form id="sign-up-form">
+            <input class="sign-up-field" type="email" placeholder="Enter Email" id="sign-up-email" required>
+            <input class="sign-up-field" type="password" placeholder="Enter Password" id="sign-up-password" required>
+            <input class="sign-up-field" type="text" placeholder="Enter Full Name" id="full-name" required><br>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+    </div>
+    <div id="main-container" style="display:none">
+        <div id="welcome-container">
+            <div id="headCont">
+                <p>Welcome <span id="display-name"></span></p>
+                <button id="log-out" style="display:none">Log Out</button>
+            </div>
+            <div id="inputCont">
+                <form id="photo-form">
+                    <input type="text" id="name" placeholder="Enter Image Name" required />
+                    <input type="file" id="photo" accept="image/*" required />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>    
+        <div id="gallery-container">
+            <p id="gal-title">Gallery</p>
+            <p id="loading-text">Image Loading</p>
+            <div id="entries-list"></div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+    
+</body>
+</html>
