@@ -1,7 +1,4 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword,updateProfile, signOut} from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
 import { getFirestore, collection, addDoc, doc, Timestamp, query, orderBy, where, getDocs, deleteDoc } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js';
 import { getStorage, ref, uploadBytes, getDownloadURL, deleteObject } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js';
@@ -32,16 +29,6 @@ const logOutBttn = document.getElementById("log-out")
 
 const modal = document.getElementById("sign-up-modal");
 const span = document.getElementsByClassName("close")[0];
-
-
-
-// document.getElementById('signUp').addEventListener('click', () => {
-//     let email = document.getElementById('email').value
-//     let password = document.getElementById('password').value
-//     createUserWithEmailAndPassword(auth,email,password).catch(e=>(
-//         console.log(e)
-//     ))
-// })
 
 document.getElementById('sign-up-entry').addEventListener('click', () => {
     modal.style.display = "block";
