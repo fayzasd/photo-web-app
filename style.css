@@ -134,7 +134,7 @@ input[type="file"]::file-selector-button {
   font-size: 10px;
 }
 
-#headCont{
+#head-cont{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -143,30 +143,30 @@ input[type="file"]::file-selector-button {
   margin-right: 30px;
 }
 
-#headCont p{
+#head-cont p{
   font-size: 40px;
   margin: 20px;  
 }
 
-#headCont button{
+#head-cont button{
   height: 20%;
 }
 
-#inputCont {
+#input-cont {
   max-width: fit-content;
   margin: 20px;
 }
 
-#inputCont form{
+#input-cont form{
   display: flex;
   flex-direction: column;
 }
 
-#inputCont form input{
+#input-cont form input{
   margin: 10px;
 }
 
-#inputCont form #name{
+#input-cont form #name{
   font-size: 18px;
   box-sizing: border-box;
   display: block;
@@ -176,7 +176,7 @@ input[type="file"]::file-selector-button {
   padding: 5px;
 }
 
-#inputCont form button {
+#input-cont form button {
   margin-left: 10px;
 }
 
